@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Defines the document type and language -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on different devices -->
+    <title>Hospitality Digitalization</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Links to the external CSS file -->
+</head>
+<body>
+    <video id="background-video" autoplay loop muted> <!-- Embeds a video element with autoplay, loop, and muted attributes -->
+        <source src="{{ url_for('static', filename='inside iitb hostel room.mp4') }}" type="video/mp4"> <!-- Specifies the video source and type -->
+        Your browser does not support the video tag. <!-- Fallback message for unsupported browsers -->
+    </video>
+    <div class="container"> <!-- Container for the content -->
+        <h1>Hospitality Process Digitalization</h1> <!-- Main heading of the webpage -->
+        <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data"> <!-- Form for uploading files -->
+            <div> <!-- Wrapper for the first input field -->
+                <label for="group_file">Upload Group CSV:</label> <!-- Label for the group file input -->
+                <input type="file" id="group_file" name="group_file" accept=".csv" required> <!-- Input field for the group CSV file -->
+            </div>
+            <div> <!-- Wrapper for the second input field -->
+                <label for="hostel_file">Upload Hostel CSV:</label> <!-- Label for the hostel file input -->
+                <input type="file" id="hostel_file" name="hostel_file" accept=".csv" required> <!-- Input field for the hostel CSV file -->
+            </div>
+            <button type="submit">Upload and Allocate</button> <!-- Submit button for the form -->
+        </form>
+        <div id="result"></div> <!-- Placeholder for displaying the result -->
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script> <!-- Links to the external JavaScript file -->
+</body>
+</html>

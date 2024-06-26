@@ -1,0 +1,100 @@
+body { /* Styling for the body element */
+    font-family: 'Bradley Hand ITC', cursive; /* Set the font family to 'Bradley Hand ITC' */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    overflow: hidden; /* Hide overflow content */
+}
+
+#background-video { /* Styling for the background video */
+    position: fixed; /* Fix the position to the viewport */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Align to the bottom */
+    min-width: 100%; /* Ensure the video covers at least 100% of the viewport width */
+    min-height: 100%; /* Ensure the video covers at least 100% of the viewport height */
+    z-index: -1; /* Set the z-index to -1 to place it behind other elements */
+}
+
+.content { /* Styling for the content container */
+    text-align: center; /* Center align the text */
+    padding: 20px; /* Add padding */
+    max-width: 800px; /* Set the maximum width */
+    width: 100%; /* Set the width to 100% */
+}
+
+h1 { /* Styling for the main heading */
+    font-size: 3em; /* Set the font size */
+    margin-bottom: 20px; /* Add margin below the heading */
+    color: #fff; /* Set the text color to white */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Add a glowing text shadow */
+}
+
+h2 { /* Styling for the subheading */
+    font-size: 2em; /* Set the font size */
+    margin-top: 20px; /* Add margin above the subheading */
+    color: #fff; /* Set the text color to white */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Add a glowing text shadow */
+}
+
+input[type="file"] { /* Styling for file input fields */
+    margin: 10px 0; /* Add margin above and below the input */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Round the corners */
+    border: 1px solid #fff; /* Add a white border */
+    background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+}
+
+button { /* Styling for buttons */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Set a gradient background */
+    border: none; /* Remove border */
+    color: white; /* Set the text color to white */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center align the text */
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Display as an inline-block element */
+    font-size: 16px; /* Set the font size */
+    margin: 4px 2px; /* Add margin */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    border-radius: 8px; /* Round the corners */
+    transition: background 0.3s ease-in-out; /* Add a transition effect for the background color */
+}
+
+button:hover { /* Styling for buttons on hover */
+    background: linear-gradient(to right, #feb47b, #ff7e5f); /* Change the gradient background on hover */
+}
+
+.table-container { /* Styling for the table container */
+    margin-top: 20px; /* Add margin above the container */
+    max-height: 300px; /* Set the maximum height */
+    overflow-y: auto; /* Add vertical scroll if content overflows */
+    background-color: rgba(255, 255, 255, 0.9); /* Set a semi-transparent white background */
+    padding: 10px; /* Add padding */
+    border-radius: 8px; /* Round the corners */
+}
+
+table { /* Styling for the table */
+    width: 100%; /* Set the width to 100% */
+    border-collapse: collapse; /* Collapse the borders */
+}
+
+th, td { /* Styling for table headers and cells */
+    padding: 12px; /* Add padding */
+    border: 1px solid #ddd; /* Add a light gray border */
+    text-align: left; /* Left-align the text */
+}
+
+th { /* Styling for table headers */
+    background-color: #ff7e5f; /* Set the background color */
+    color: white; /* Set the text color to white */
+}
+
+tr:nth-child(even) { /* Styling for even table rows */
+    background-color: #f2f2f2; /* Set a light gray background */
+}
+
+tr:hover { /* Styling for table rows on hover */
+    background-color: #ddd; /* Set a darker gray background on hover */
+}
